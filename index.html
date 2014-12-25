@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>node-webkit</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <style type="text/css">
+      td{
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="qqIframe" src="http://w.qq.com/"></iframe>
+    <p> 只要打开了这个页面就可以上报信息了,注意过5个小时左右重启一下，账号34879169，密码198911487572015</p>
+    <a href="javascript:void(0);" id="switch">关闭Log</a>
+    <a href="javascript:void(0);" id="clear">清空Log</a>
+    <a href="javascript:void(0);" id="giveup">一键放弃</a>
+
+    <p id="dataStat">
+    </p>
+    <div id="result"></div>
+    <table class="table" id="table" >
+      <thead>
+        <tr>
+          <th>原始信息</th>
+          <th>match？</th>
+          <th>内容</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+
+    <script type="text/javascript" src="./resources/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./resources/js/smartSend.js"></script>
+    <script type="text/javascript" src="./resources/js/index.js"></script>
+  </body>
+</html>
